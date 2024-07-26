@@ -1,0 +1,41 @@
+body {
+  text-align: center;
+
+  background-color: #bee3ba;
+}
+
+.div {
+  border: 1px black;
+}
+
+.img {
+  width: 60px;
+}
+
+a {
+  all: unset;
+}
+
+.collapse {
+  &:not(.show) {
+    display: none;
+  }
+}
+
+.collapsing {
+  height: 0;
+  overflow: hidden;
+  @include transition($transition-collapse);
+}
+
+.flr {
+  float: right;
+}
+
+.fll {
+  float: left;
+}
+
+img {
+  mix-blend-mode: multiply;
+}
